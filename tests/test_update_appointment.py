@@ -1,6 +1,10 @@
 from config import config
 import requests
 
+"""
+    This test allows verifying that a medical appointment cannot be updated correctly.
+"""
+
 def test_update_appointment():
     id_appointment = 328
     id_status = 16

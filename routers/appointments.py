@@ -6,6 +6,10 @@ from middlewares import verify_key
 import requests
 import json
 
+"""
+    This file contains the logic necessary to retrieve medical appointments and update a specific one through its ID.
+"""
+
 router = APIRouter(prefix="/citas")
 
 @router.get("/", dependencies=[Depends(verify_key)])

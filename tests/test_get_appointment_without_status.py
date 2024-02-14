@@ -2,6 +2,10 @@ from config import config
 from utils import get_current_date, get_future_date
 import requests
 
+"""
+    This test allows verifying that a medical appointment can be retrieved without considering a status.
+"""
+
 def test_get_appointment():
     url = config["LOCALHOST"] + "/citas"
 

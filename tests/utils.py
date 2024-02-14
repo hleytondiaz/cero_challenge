@@ -1,5 +1,9 @@
 from datetime import datetime, timedelta
 
+"""
+    This file contains functions needed for some test cases.
+"""
+
 def get_current_date():
     current_date = datetime.now().strftime("%Y-%m-%d")
     return current_date

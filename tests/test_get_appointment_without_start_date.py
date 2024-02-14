@@ -2,6 +2,10 @@ from config import config
 from utils import get_future_date
 import requests
 
+"""
+    This test verifies that a medical appointment cannot be retrieved due to an undefined start date.
+"""
+
 def test_get_appointment():
     url = config["LOCALHOST"] + "/citas"
 
