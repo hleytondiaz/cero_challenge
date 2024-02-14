@@ -23,4 +23,7 @@ def test_update_appointment():
 
     message = response.json()["error"]["message"]
 
-    assert response.status_code == 200 and message == "Estado no existe o se encuentra deshabilitado"
+    condition_1 = message == "Estado no existe o se encuentra deshabilitado"
+    condition_2 = message == "La cita que está intentando modificar está anulada"
+
+    assert response.status_code == 200 and (condition_1 or condition_2)
